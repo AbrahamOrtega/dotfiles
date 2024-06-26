@@ -80,7 +80,8 @@ logo "Installing needed packages.."
 dependencias=(alacritty base-devel brightnessctl bspwm dunst feh firefox geany git kitty imagemagick jq \
 			        jgmenu libwebp lsd maim mpc mpd neovim ncmpcpp npm pamixer pacman-contrib \
 			        papirus-icon-theme physlock picom playerctl polybar polkit-gnome python-gobject ranger \
-			        redshift rofi rustup sxhkd tmux ttf-inconsolata ttf-jetbrains-mono ttf-jetbrains-mono-nerd \
+			        redshift rofi rustup sxhkd tmux lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings \
+                    ttf-inconsolata ttf-jetbrains-mono ttf-jetbrains-mono-nerd \
 			        ttf-joypixels ttf-terminus-nerd ueberzug webp-pixbuf-loader xclip xdg-user-dirs \
 			        xdo xdotool xorg-xdpyinfo xorg-xkill xorg-xprop xorg-xrandr xorg-xsetroot \
 			        xorg-xwininfo zsh zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting)
@@ -116,22 +117,22 @@ fi
 
 ########## ---------- Cloning the Rice! ---------- ##########
 
-logo "Downloading dotfiles"
+#logo "Downloading dotfiles"
 
-repo_url="https://github.com/gh0stzk/dotfiles"
-repo_dir="$HOME/dotfiles"
+#repo_url="https://github.com/gh0stzk/dotfiles"
+#repo_dir="$HOME/dotfiles"
 
 # Verifies if the folder of the repository exists, and if it does, deletes it
-if [ -d "$repo_dir" ]; then
-    printf "Removing existing dotfiles repository\n"
-    rm -rf "$repo_dir"
-fi
+#if [ -d "$repo_dir" ]; then
+#    printf "Removing existing dotfiles repository\n"
+#    rm -rf "$repo_dir"
+#fi
 
 # Clone the repository
-printf "Cloning dotfiles from %s\n" "$repo_url"
-git clone --depth=1 "$repo_url" "$repo_dir"
-sleep 2
-clear
+#printf "Cloning dotfiles from %s\n" "$repo_url"
+#git clone --depth=1 "$repo_url" "$repo_dir"
+#sleep 2
+#clear
 
 ########## ---------- Backup files ---------- ##########
 
